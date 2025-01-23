@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Jeep med 4WD",
+        "price": 4.998,
+        "image": "images/jeep1.webp",
+        "link": "../index.html"
+    },
+    {
+        "id": 2,
+        "name": "Stor 2-seters Brannbil",
+        "price": 4.398,
+        "image": "images/camionpompier.webp"
+    },
+    {
+        "id": 3,
+        "name": "Robot-Dinosauren : Pleo",
+        "price": 2998,
+        "image": "images/dinosaure.webp",
+        "link": "../Produit_dino/dino.html"
+    },
+    {
+        "id": 4,
+        "name": "El-Moped Scooter",
+        "price": 15.998,
+        "image": "images/scoot1.webp"
+    },
+    {
+        "id": 5,
+        "name": "Den 2 seters Mercedes",
+        "price": 3.298,
+        "image": "images/mercedes-1.webp"
+    },
+    {
+        "id": 6,
+        "name": "Verdens lengste og kraftigste 2-øyde Zoom-kikkert",
+        "price": 2.398,
+        "image": "images/jumelles.webp"
+    },
+    {
+        "id": 7,
+        "name": "Star Wars R2-D2 Projektor-Ur",
+        "price": 299,
+        "image": "images/r2d2.webp"
+    },
+    {
+        "id": 8,
+        "name": "Elektrisk-ATV til ungdom & Voksne",
+        "price": 9.998,
+        "image": "images/quad.webp"
+    }
+]

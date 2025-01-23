@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de commande</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav aria-label="ariane" class="fil-ariane">
+        <ul>
+            <li><a href="../Accueil-hugo/index.html">Velkomst</a></li>
+            <li><a href="../index.html">Produkt</a></li>
+            <li><a href="../Detail-de-commande/detail.html">Kurv</a></li>
+            <li><span aria-current="page">Bestille</span></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Legg inn bestilling</h1>
+        <p class="subheading">Fullfør kjøpet med letthet</p> <!-- Ajout d'un sous-titre -->
+    </header>
+
+    <div class="commande-container">
+        <h2>Bestillingsinformasjon</h2>
+        
+        <form id="commande-form">
+            <div class="section">
+                <h3>Personlig informasjon</h3>
+                <label for="nom">Fullt navn</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="email">E-postadresse</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telephone">Telefon (10 sifre)</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </div>
+
+            <div class="section">
+                <h3>Leveringsadresse</h3>
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse" name="adresse" required>
+
+                <label for="ville">By</label>
+                <input type="text" id="ville" name="ville" required>
+
+                <label for="code-postal">postnummer</label>
+                <input type="text" id="code-postal" name="code-postal" required>
+
+                <label for="pays">Land</label>
+                <input type="text" id="pays" name="pays" required>
+            </div>
+
+            <div class="section">
+                <h3>Betalingsmåte</h3>
+                <label for="carte-nom">Navn på kortet</label>
+                <input type="text" id="carte-nom" name="carte-nom" required>
+
+                <label for="carte-numero">Kortnummer (16 sifre)</label>
+                <input type="text" id="carte-numero" name="carte-numero" required>
+
+                <label for="expiration">Utløpsdato</label>
+                <input type="text" id="expiration" name="expiration" placeholder="MM/AA" required>
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+
+            <div class="section">
+                <h3>Bestillingssammendrag</h3>
+                <div id="resume-commande">
+                    <!-- Résumé de la commande (produits, quantités, prix) ajouté dynamiquement ici -->
+                </div>
+                <h4 id="total-commande">Totalt : 0 kr</h4>
+            </div>
+
+            <button type="submit" class="btn-confirmer">Bekreft bestillingen</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

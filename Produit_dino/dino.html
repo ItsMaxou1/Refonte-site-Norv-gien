@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page produit</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Fil d'Ariane -->
+    <nav aria-label="ariane" class="fil-ariane">
+        <ul>
+            <li><a href="../Accueil-hugo/index.html">Velkomst</a></li>
+            <li><span aria-current="page">Produkt</span></li>
+        </ul>
+    </nav>
+
+    <!-- Conteneur principal pour le produit -->
+    <div class="produit-container">
+        <!-- Section image -->
+        <div class="produit-image">
+            <div class="conteneur-carrousel">
+                <div class="carrousel">
+                  <img src="../dino/pleo-pet.webp" alt="Image 1">
+                  <img src="../dino/pleo.0070887621276_AV_500X500.webp" alt="Image 2">
+                  <img src="../dino/pleo.0070887621276_AV1_500X500.webp" alt="Image 3">
+                  <img src="../dino/pleo.0070887621276_AV3_500X500.webp" alt="Image 4">
+                </div>
+                <div class="indicateurs-carrousel">
+                  <button data-index="0" class="actif"></button>
+                  <button data-index="1"></button>
+                  <button data-index="2"></button>
+                  <button data-index="3"></button>
+                </div>
+              </div>
+        </div>
+
+        <!-- Section détails du produit -->
+        <div class="produit-details">
+            <h1>Jeep terrengbil</h1>
+            <div class="rating">
+                <span>★★★★☆</span>
+                <span>588,458 varsel</span>
+            </div>
+            <p class="prix">Pris : kr. 2999</p>
+            <p>Pleo rb er den ideelle følgesvennen for de som elsker interaktive roboter. Den tilbyr realistiske bevegelser, en unik personlighet og autentisk interaksjon med omgivelsene.</p>
+
+            <h3>Funksjoner :</h3>
+            <ul>
+                <li>Talegjenkjenning</li>
+                <li>Mer enn 10 000 sensorer</li>
+                <li>Motorer for jevne og realistiske bevegelser</li>
+                <li>Oppladbart Li-Po-batteri med 230V lader</li>
+            </ul>
+
+            <!-- Section Product details -->
+            <div class="product-details">
+                <h3>Produktdetaljer</h3>
+                <ul>
+                    <li>Vedlikeholdsinstruksjoner: Skånsom rengjøring</li>
+                    <li>Opprinnelse: Importert</li>
+                    <li>Materiale: Solid plast med innebygde sensorer</li>
+                    <li>Dimensjoner: 52 x 19 x 16 cm</li>
+                </ul>
+            </div>
+
+            <!-- Bouton Ajouter au panier -->
+            <div class="ajouter-panier">
+                <button>Legg i handlekurv</button>
+            </div>            
+        </div>
+    </div>
+
+    <div class="description-detaillee">
+        <h2>Detaljert beskrivelse:</h2>
+        <p>Pleo rb er en autonom robotdinosaur som reagerer på omgivelsene med realistiske bevegelser og følelser. Med over 10 000 sensorer og talegjenkjenning utvikler hver Pleo sin egen personlighet basert på interaksjonene den har.</p>
+        <p>Den kan også kjenne igjen og samhandle med andre Pleo-er. Pleo rb har et oppladbart batteri og gir beskjed når det trenger lading. Huden reagerer på både kjærtegn og slag, og den endrer oppførsel basert på temperatur.</p>
+    </div>
+
+    <!-- Section des avis -->
+    <div class="avis">
+        <h3>Kundeanmeldelser :</h3>
+
+        <div class="ajouter-avis">
+            <h4>Legg igjen en anmeldelse:</h4>
+            <form id="avisForm">
+                <label for="name">Navn :</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <div class="rating">
+                    <label>Merk :</label>
+                    <div id="etoiles">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <input type="hidden" id="rating" name="rating" value="0">
+                </div>
+                <label for="review">Din mening :</label><br>
+                <textarea id="review" name="review" rows="4" required></textarea><br><br>
+                <button type="submit">Send inn</button>
+            </form>
+        </div>
+
+        <div class="avis-liste">
+            <div class="avis-client">
+                <p><strong>Ingrid Hansen</strong> - ★★★★★</p>
+                <p>Fantastisk robot! Perfekt for barn som elsker interaktive leker. Pleo utvikler en unik personlighet og gir timevis med moro.</p>
+            </div>
+            <div class="avis-client">
+                <p><strong>Ola Nilsen</strong> - ★★★★☆</p>
+                <p>Utrolig realistisk! Bevegelser og reaksjoner er imponerende. En flott følgesvenn som både lærer og underholder.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Arngren</h3>
+            <p>Takk for at du besøker nettstedet vårt. Hold kontakten med oss ​​på våre sosiale nettverk.</p>
+            <ul class="socials">
+                <li><a href="#"><img src="../Accueil-hugo/images/facebook.webp" alt=""></a></li>
+                <li><a href="#"><img src="../Accueil-hugo/images/instagram.webp" alt=""></a></li>
+                <li><a href="#"><img src="../Accueil-hugo/images/twitter.webp" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ARNGREN. Alle rettigheter forbeholdt.</p>
+        </div>
+        <ul class="socials">
+            <li><a href="../Accueil-hugo/mentionslegales.html">Juridisk informasjon</a></li>
+            <li><a href="../Accueil-hugo/cgv.html">VOB</a></li>
+            <li><a href="../Accueil-hugo/politiqueconfi.html">Personvernerklæring</a></li>
+            <li><a href="../Accueil-hugo/retour.html">Retur- og refusjonspolicy</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

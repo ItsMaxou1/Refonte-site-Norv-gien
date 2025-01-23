@@ -1,0 +1,265 @@
+/* Style général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Fil d'Ariane */
+.fil-ariane {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.fil-ariane ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.fil-ariane li {
+    display: flex;
+    align-items: center;
+}
+
+.fil-ariane li::after {
+    content: '>';
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #888;
+}
+
+.fil-ariane li:last-child::after {
+    content: ''; /* Supprime la flèche après le dernier élément */
+}
+
+.fil-ariane a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.fil-ariane a:hover {
+    color: #0056b3;
+}
+
+.fil-ariane li:last-child {
+    color: #333; /* Dernier élément en gris */
+}
+
+/* Header */
+header {
+    background-color: #232F3E;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Conteneur principal des produits */
+#panier-produits {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Les produits */
+.produit {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+}
+
+.produit img {
+    width: 190px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.produit h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.produit p {
+    margin: 5px 0;
+}
+
+.produit button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.produit-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.produit-nom-prix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.produit button:hover {
+    background-color: #c82333;
+}
+
+/* Total prix */
+#total-prix {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+/* Fin total prix */
+
+/* Style pour le bouton "Passer commande" */
+.btn-commander {
+    display: inline-block;
+    background-color: #FF9900;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-commander:hover {
+    background-color: #e68a00;
+  }
+
+/* Fin style Bouton "Passer commande" */
+
+/* Style pour le conteneur du bouton "Passer commande" */
+.commande-container {
+    margin-top: 20px;
+  }
+
+/* Fin du style pour le conteneur */
+  
+  /* Style pour le bouton "Passer commande" */
+  .btn-commander {
+    display: inline-block;
+    background-color: #FF9900;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-commander:hover {
+    background-color: #e68a00;
+  }
+  
+/* Fin du style pour le bouton */
+
+@media only screen and (max-width: 376px) {
+
+    /* Ajustement du fil d'Ariane */
+    .fil-ariane {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    /* Ajustement des produits */
+    .produit {
+        flex-direction: column;
+        align-items: center; /* Centrer l'image et le texte */
+        text-align: center; /* Centrer le texte */
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .produit img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .produit h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .produit p {
+        font-size: 14px;
+    }
+
+    .produit-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrer les éléments */
+    }
+
+    .produit-nom-prix {
+        margin-bottom: 10px;
+        width: 100%; /* Pour que le texte prenne toute la largeur disponible */
+    }
+
+    .produit button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* Ajustement de la quantité */
+    .produit p span {
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+    }
+
+    /* Total prix */
+    #total-prix {
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Bouton "Passer commande" */
+    .btn-commander {
+        padding: 10px 15px;
+        font-size: 16px;
+        width: 100%; /* Le bouton prendra toute la largeur */
+        text-align: center;
+    }
+
+    /* Centrage du bouton de commande */
+    .commande-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+

@@ -1,0 +1,491 @@
+/* Style général */
+body {
+    margin: 20px;
+}
+
+@font-face {
+    font-family:"font1";
+    src: url(font/Questrial-Regular.ttf);
+}
+
+/* Fil d'Ariane */
+
+.fil-ariane {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .fil-ariane ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .fil-ariane li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .fil-ariane li::after {
+    content: '>';
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #888;
+  }
+  
+  .fil-ariane li:last-child::after {
+    content: ''; /* Supprime la flèche après le dernier élément */
+  }
+  
+  .fil-ariane a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .fil-ariane a:hover {
+    color: #0056b3;
+  }
+  
+  .fil-ariane li:last-child {
+    color: #333; /* Dernier élément en gris */
+  }  
+
+/* FIN FIL ARIANNE */
+
+/* Conteneur principal du produit */
+.produit-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+/* début carrousel image css */
+.conteneur-carrousel {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+  
+.carrousel {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+  
+.carrousel img {
+    width: 100%;
+    height: auto;
+    flex: 0 0 100%;
+}
+  
+.indicateurs-carrousel {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+  
+.indicateurs-carrousel button {
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+  
+.indicateurs-carrousel button.actif {
+    background-color: #333;
+}
+  
+  /* fin carrousel css */
+
+/* Détails du produit */
+.produit-details {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.produit-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.produit-details .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.produit-details .rating span {
+    margin-right: 10px;
+}
+
+.produit-details .prix {
+    font-size: 22px;
+    color: green;
+    margin-bottom: 15px;
+}
+
+.produit-details ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.produit-details ul li {
+    margin-bottom: 5px;
+}
+
+/* Section Product details */
+.product-details {
+    margin-bottom: 20px;
+}
+
+.product-details ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.product-details ul li {
+    margin-bottom: 5px;
+}
+
+/* Description détaillée */
+.description-detaillee {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.description-detaillee h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+.description-detaillee p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Choix des couleurs */
+.couleurs-options {
+    margin-bottom: 20px;
+}
+
+.couleurs-options select {
+    padding: 5px;
+}
+
+/* Bouton Ajouter au panier */
+.ajouter-panier button {
+    background-color: #ff9900;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.ajouter-panier button:hover {
+    background-color: #e68a00;
+}
+
+/* Section des avis */
+
+.avis {
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.avis h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.avis form {
+    margin-bottom: 30px;
+}
+
+.avis form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Etoiles avec rating */
+
+.rating {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#etoiles {
+    display:inline-block;
+    margin-bottom: 10px;
+}
+
+#etoiles span {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+#etoiles span.selected {
+    color: #f5b301;
+}
+
+#etoiles {
+    cursor: pointer;
+    font-size: 2em;
+    color: lightgray;
+}
+
+/* FIN etoiles */
+
+.avis-liste {
+    margin-top: 20px;
+}
+
+.avis strong {
+    display: block;
+    font-size: 16px;
+}
+
+.avis p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* fin étoiles */
+
+.avis form button:hover {
+    background-color: #005bb5;
+}
+
+.avis-client {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.avis-client p {
+    margin: 5px 0;
+}
+
+/* Formulaire ajouter un avis */
+.ajouter-avis {
+    margin-top: 20px;
+}
+
+.ajouter-avis form {
+    display: block;
+}
+
+.ajouter-avis label {
+    font-weight: bold;
+}
+
+.ajouter-avis textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.ajouter-avis button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.ajouter-avis button:hover {
+    background-color: #dd8705;
+}
+
+/* Fin du formulaire avis */
+
+/* footer */
+
+footer {
+    background: #eeeee6;
+    color: black;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials li a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-content img{
+    width: 50px;
+    height: 50px;
+}
+
+/* Fin footer
+
+/* Fin formulaire ajouter des avis */
+
+/* Responsive pour les petits écrans (iPhone SE - 375x667) */
+@media only screen and (max-width: 376px) {
+
+    /* Conteneur principal du produit en colonne */
+    .produit-container {
+        flex-direction: column;
+    }
+
+    /* Carrousel et images en 100% largeur */
+    .conteneur-carrousel {
+        max-width: 100%;
+    }
+
+    .carrousel img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Détails du produit */
+    .produit-details {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    /* Réduire la taille du titre du produit */
+    .produit-details h1 {
+        font-size: 20px;
+    }
+
+    /* Centrer et ajuster les étoiles et les avis */
+    .produit-details .rating {
+        justify-content: center;
+    }
+
+    .produit-details .prix {
+        font-size: 20px;
+    }
+
+    /* Liste des fonctionnalités en centré */
+    .produit-details ul {
+        padding-left: 0;
+    }
+
+    /* Ajuster le bouton Ajouter au panier */
+    .ajouter-panier button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    /* Description détaillée */
+    .description-detaillee {
+        font-size: 14px;
+        padding: 10px;
+        margin: 20px 0;
+    }
+
+    /* Section des avis */
+    .avis h3 {
+        font-size: 16px;
+    }
+
+    .avis form {
+        font-size: 14px;
+    }
+
+    .avis form input, .avis form textarea {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .avis form button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .avis-client p {
+        font-size: 14px;
+    }
+
+    /* Carrousel indicateurs en version compacte */
+    .indicateurs-carrousel button {
+        width: 15px;
+        height: 15px;
+    }
+
+    .footer-bottom p{
+        font-size: 100%;
+    }
+
+    .socials li a{
+        font-size: 8px;
+    }
+}
